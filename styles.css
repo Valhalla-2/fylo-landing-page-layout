@@ -1,0 +1,45 @@
+:root {
+  --primery-blue: hsl(243, 87%, 12%);
+  --primery-dblue: hsl(238, 22%, 44%);
+  --accent-blue: hsl(224, 93%, 58%);
+  --accent-cyan: hsl(170, 45%, 43%);
+  --neutral-grayishblue: hsl(240, 75%, 98%);
+  --neutral-gray: hsl(0, 0%, 75%);
+  --open-sans: 'Open Sans', sans-serif;
+  --raleway: 'Raleway', sans-serif;
+}
+
+/* box-sizing */
+*, html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 0.9375rem;
+}
+
+body {
+  font-family: var(--open-sans);
+}
+
+.content-container {
+  padding: 1.5rem 0.5rem;
+}
+
+.fylo-brand {
+  flex: 0 1 auto;
+  width: clamp(5.6rem, 7.5vw, 8rem);
+}
+
+.fylo-logo {
+  width: 100%;
+}
+
+ul.navbar-nav {
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
