@@ -19,15 +19,16 @@
 html, body {
   width: 100%;
   min-height: 100vh;
-  font-size: 0.9375rem;
+  /* font-size: 0.9375rem; */
 }
 
 body {
   font-family: var(--open-sans);
 }
 
-.content-container {
-  padding: 1.5rem 0.5rem;
+.main-content {
+  padding: 1.5rem;
+  text-align: center;
 }
 
 .fylo-brand {
@@ -42,4 +43,31 @@ body {
 ul.navbar-nav {
   flex-flow: row nowrap;
   gap: 1rem;
+}
+
+/* fylo-signup section */
+.fylo-main-heading {
+  font-weight: 700;
+  font-family: var(--raleway);
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.get-started-btn {
+  border: none;
+  margin: 1rem 0;
+  background-color: var(--accent-blue);
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.illustration {
+  width: 100%;
 }
