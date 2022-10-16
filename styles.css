@@ -17,8 +17,9 @@
 }
 
 html, body {
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -147,4 +148,5 @@ input[type=email] {
 footer.attribution {
   background-color: var(--primery-blue);
   color: #fff;
+  margin:0;
 }
