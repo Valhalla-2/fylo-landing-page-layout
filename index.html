@@ -24,9 +24,9 @@
 <body>
 
   <main class="main-content">
-    <section>
+    <section class="nav-wrapper p-4">
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid navbar-container">
           <a class="navbar-brand fylo-brand" href="#"><img src="images/logo.svg" alt="fylo logo" class="fylo-logo"> </a>
           <div class="">
             <ul class="navbar-nav">
@@ -45,29 +45,73 @@
       </nav>
     </section>
 
-    <section class="row fylo-signup">
-
+    <section class="row fylo-signup p-4 center-text">
       <div class="col-lg-6 col-sm-12 col-12">
-        <img src="images/illustration-1.svg" alt="" class="illustration">
+        <img src="images/illustration-1.svg" alt="" class="fylo-illustration">
       </div>
 
       <div class="col-lg-6 col-sm-12 col-12">
-        <h1 class="fylo-main-heading">All your files in one secure location, accessible anywhere.</h1>
+        <h1 class="fylo-heading heading-first">All your files in one secure location, accessible anywhere.</h1>
         <p>
           Fylo stores your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.</p>
         <form action="" method="get" id="mail-submit">
-          <input type="email" name="email" value="Email" required class="email-input">
+          <input type="email" name="email" placeholder="Enter your email..." required class="email-input">
         </form>
         <button type="submit" name="button" form="mail-submit" class="get-started-btn">Get Started</button>
       </div>
-
     </section>
 
+    <section class="fylo-working-process p-4 center-text">
+      <div class="image-wrapper">
+        <img src="images/illustration-2.svg" alt="" class="fylo-illustration">
+      </div>
+      <div class="working-process-description">
+        <h2 class="fylo-heading heading-second">Stay productive, wherever you are</h2>
+        <p>Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+        <p>Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!</p>
+
+        <h3><a href="#">See how Fylo works</a></h3>
+        <div class="review-card left-text shadow rounded">
+          <p class="review-text">Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.</p>
+          <div class="reviewer">
+            <img src="images/avatar-testimonial.jpg" alt="kyle burton profile" class="kyle-burton">
+            <div class="reviewer-info">
+              <h4 class="reviewer-name">Kyle Burton</h4>
+              <p class="reviewer-position">Founder & CEO, Hudle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="early-access p-4 center-text">
+      <h3>Get early access today</h3>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous.
+        If you have any questions, our support team would be happy to help you.</p>
+      <div class="">
+        <form action="" method="get" id="mail-submit">
+          <input type="email" name="email" placeholder="email@example.com" class="email-input" required>
+        </form>
+        <button type="submit" name="button" form="mail-submit" class="get-started-btn">Get Started For Free</button>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="attribution">
+    <div class="contact-us">
+      <img src="images/logo.svg" alt="">
+      <address class="">
+        <p>Phone: +1-543-123-4567</p>
+        <p>example@fylo.com</p>
+      </address>
+    </div>
+  </footer>
 
 </body>
 
