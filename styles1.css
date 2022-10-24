@@ -1,0 +1,234 @@
+:root {
+  --primery-blue: hsl(243, 87%, 12%);
+  --primery-dblue: hsl(238, 22%, 44%);
+  --accent-blue: hsl(224, 93%, 58%);
+  --accent-cyan: hsl(170, 45%, 43%);
+  --neutral-grayishblue: hsl(240, 75%, 98%);
+  --neutral-gray: hsl(0, 0%, 75%);
+  --open-sans: 'Open Sans', sans-serif;
+  --raleway: 'Raleway', sans-serif;
+}
+
+/* box-sizing */
+*, html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: var(--open-sans);
+  font-size: 0.9375rem;
+}
+
+/* main content */
+main.main-content, section {
+  width: 100% !important;
+}
+
+.navbar-container {
+  padding: 0;
+  margin: 0;
+}
+
+.fylo-brand {
+  flex: 0 1 auto;
+  width: clamp(5.6rem, 10vw, 10rem);
+}
+
+.fylo-logo {
+  width: 100%;
+}
+
+ul.navbar-nav {
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.fylo-signup {
+  padding-top: 0 !important;
+}
+
+.fylo-description {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+/* All about headings*/
+.fylo-heading {
+  font-weight: 700;
+  font-family: var(--raleway);
+}
+
+.heading-first {
+  font-size: clamp(1.5rem, 3vw, 10rem);
+}
+
+.heading-second {
+  font-size: clamp(1rem, 2vw, 10rem);
+  margin: 4rem 0 1.5rem;
+}
+
+/* mail signup & button */
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type=email] {
+  width: 100%;
+  min-width: 150px;
+  padding: 9px;
+  border-radius: 3px;
+}
+
+.mail-submit {
+  width:clamp(9.75rem, 25vw, 25rem);
+  flex: 0 1 auto;
+}
+
+.email-input {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.get-started-btn {
+  width: clamp(5.5rem, 11vw, 14rem);
+  flex: 0 1 auto;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 9px 0;
+  margin: 1rem 0;
+}
+
+.fylo-illustration {
+  width: 100%;
+  display: block;
+}
+
+.fylo-working-process {
+  background-image: url("images/bg-curve-desktop.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-wrapper {
+  padding-top: 1.5rem;
+}
+
+.working-process-description>p {
+  text-align: start;
+}
+
+.working-process-description>h3 {
+  border-bottom: 1px solid var(--accent-cyan);
+  width: max-content;
+  margin: 1rem 0;
+}
+
+.fylo-link {
+  color: var(--accent-cyan);
+  font-size: 1rem;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.fylo-link::after {
+  content: url("images/icon-arrow.svg");
+  vertical-align: middle;
+  margin: 0 0.5rem;
+}
+
+/* review card section */
+.review-card {
+  max-width: 320px;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  background-image: url(images/icon-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: top 0.5rem left 1.7rem;
+}
+
+.kyle-burton {
+  max-width: 40px;
+  border-radius: 50px;
+}
+
+.reviewer-info {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.7rem;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  margin: 0;
+  font-size: inherit;
+}
+
+.reviewer-position {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.early-access {
+  display: flex;
+  background-color: var(--primery-dblue);
+  color: #fff;
+}
+
+.early-access-description {
+  padding: 2rem clamp(2rem, 12vw, 11rem) 2rem 2rem !important;
+}
+
+.early-access div {
+  flex: 0 1 auto;
+  width: 50%;
+}
+
+.early-access-heading {
+  font-size: clamp(1.3rem, 1.8vw, 2.5rem);
+}
+
+.early-access-signup {
+  padding: 2rem clamp(2rem, 12vw, 11rem) 2rem 2rem !important;
+}
+
+/* footer section */
+footer.attribution {
+  background-color: var(--primery-blue);
+  margin: 0;
+}
+
+.attribution a {
+  color: #FFF !important;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+}
+
+@media and screen (min-width:575px) {
+
+.nav-wrapper,
+.fylo-singup,
+.fylo-working-process,
+.early-access,
+.attribution {
+  padding: 3rem !important;
+}
+
+
+}

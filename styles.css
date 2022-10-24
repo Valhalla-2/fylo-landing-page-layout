@@ -14,139 +14,150 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 html, body {
-  max-width: 100%;
+  width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
   font-family: var(--open-sans);
-  font-size: 0.9375rem;
+  /* font-size: 0.9375rem; */
+    text-align: center;
 }
 
-/* main content */
-.center-text {
-  text-align: center;
+/* custom spaceing */
+.responsive-spaceing {
+  padding: clamp(1rem, 6vw, 5rem) !important;
 }
 
-.left-text {
-  text-align: left;
-}
-
+/* navbar & fylo-signup */
 .navbar-container {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
 }
 
 .fylo-brand {
   flex: 0 1 auto;
-  width: clamp(5.6rem, 7.5vw, 8rem);
+  width: clamp(5.6rem, 10vw, 10rem);
 }
 
-.fylo-logo {
-  width: 100%;
+.navbar-nav {
+  gap: 1rem !important;
 }
 
-ul.navbar-nav {
-  flex-flow: row nowrap;
-  gap: 1rem;
+.fylo-signup {
+  padding-top: 0 !important;
 }
 
-/* All about headings*/
+/* setting up the font-size & font-weight */
 .fylo-heading {
   font-weight: 700;
   font-family: var(--raleway);
 }
 
 .heading-first {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.8vw, 3rem) !important;
 }
 
 .heading-second {
-  font-size: 1rem;
+  font-size: clamp(1.3rem, 2.5vw, 2rem) !important;
   margin: 4rem 0 1.5rem;
 }
 
-/* mail signup & button */
+h3.fylo-heading {
+  font-size: clamp(1rem, 2vw, 2rem) !important;
+}
+
+.fylo-link {
+  font-family: var(--raleway);
+  color:var(--accent-cyan) ;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-cyan);
+}
+
+/* form control section */
+.get-started-btn {
+  width: 100%;
+  font-family: var(--raleway);
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 9px 5px;
+  margin: 0.5rem 0;
+}
+
 input[type=email] {
   width: 100%;
-  padding: 0.5rem;
-  border-radius: 5px;
+  min-width: 150px;
+  padding: 9px;
+  border-radius: 3px;
 }
 
-.get-started-btn {
-  border: none;
-  margin: 1rem 0;
-  background-color: var(--accent-blue);
-  width: 100%;
-  padding: 0.6rem;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.fylo-illustration {
-  width: 100%;
-  display: block;
-}
-
+/* fylo-working-process section */
 .fylo-working-process {
-  background-image: url("images/bg-curve-mobile.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: var(--neutral-grayishblue);
 }
 
-.image-wrapper {
-  padding-top: 1.5rem;
-}
-
-.working-process-description>p {
-  text-align: start;
-}
-
-/* review card section */
-.review-card {
-  padding:1.5rem 0 1rem 1.7rem;
-  font-size: 0.8rem;
-}
-
-.kyle-burton {
-  max-width: 40px;
-  border-radius: 50px;
-}
-
-
-.reviewer-info {
-  display: inline-block;
+.fylo-link::after {
+  content:url("images/icon-arrow.svg");
   vertical-align: middle;
-
+  margin-left: 5px;
 }
 
-.reviewer-name{
+.review-card {
+  max-width: 320px;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  background-image: url(images/icon-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: top 0.6rem left 1.6rem;
+  margin: auto;
+  text-align: left;
+}
+
+.kyle-burton-avatar {
+  max-width: 40px;
+}
+
+.reviewer-name {
+  font-size: 0.8rem;
   font-weight: 700;
-  margin: 0;
-  font-size: inherit;
 }
 
 .reviewer-position {
-  margin: 0;
   font-size: 0.7rem;
-  line-height: 2;
 }
 
+/* for other screen resolution*/
+@media screen and (min-width:576px) {
+  body {
+    text-align: left;
+  }
+  .fylo-signup, .fylo-working-process, .form-section {
+    display: flex !important;
+  }
 
-.early-access {
-  background-color: var(--primery-dblue);
-  color: #fff;
-}
+  .get-started-btn {
+    max-width: 12rem;
+    margin: 7px 10px;
+  }
 
-/* footer section */
-footer.attribution {
-  background-color: var(--primery-blue);
-  color: #fff;
-  margin:0;
+  .mail-submit {
+    max-width: 22rem;
+  }
+
+  /* fylo working processs */
+  .background-wrapper {
+    background-image: url("images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: var(--neutral-grayishblue);
+  }
+
+  .review-card {
+    margin: 0;
+  }
 }
