@@ -14,7 +14,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 html, body {
@@ -25,7 +24,7 @@ html, body {
 body {
   font-family: var(--open-sans);
   /* font-size: 0.9375rem; */
-    text-align: center;
+  text-align: center;
 }
 
 /* custom spaceing */
@@ -40,7 +39,7 @@ body {
 
 .fylo-brand {
   flex: 0 1 auto;
-  width: clamp(5.6rem, 10vw, 10rem);
+  width: clamp(5.6rem, 10vw, 10rem) !important;
 }
 
 .navbar-nav {
@@ -72,7 +71,7 @@ h3.fylo-heading {
 
 .fylo-link {
   font-family: var(--raleway);
-  color:var(--accent-cyan) ;
+  color: var(--accent-cyan);
   font-size: 1rem;
   text-decoration: none;
   border-bottom: 1px solid var(--accent-cyan);
@@ -101,7 +100,7 @@ input[type=email] {
 }
 
 .fylo-link::after {
-  content:url("images/icon-arrow.svg");
+  content: url("images/icon-arrow.svg");
   vertical-align: middle;
   margin-left: 5px;
 }
@@ -130,17 +129,53 @@ input[type=email] {
   font-size: 0.7rem;
 }
 
+/* early acess */
+.early-access {
+  background-color: var(--primery-dblue);
+  color: #fff;
+}
+
+/* footer section */
+.attribution {
+  background-color: var(--primery-blue);
+  text-align: left;
+}
+
+.attribution a {
+  color: #fff !important;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+}
+
+.phone::before {
+  content: url("images/icon-phone.svg");
+  margin-right: 1rem;
+}
+
+.email::before {
+  content: url("images/icon-email.svg");
+  margin-right: 1rem;
+}
+
 /* for other screen resolution*/
 @media screen and (min-width:576px) {
   body {
     text-align: left;
   }
-  .fylo-signup, .fylo-working-process, .form-section {
+
+  .fylo-signup, .fylo-working-process, .form-section, .early-access {
     display: flex !important;
   }
 
   .get-started-btn {
-    max-width: 12rem;
+    max-width: 15rem;
     margin: 7px 10px;
   }
 
@@ -159,5 +194,31 @@ input[type=email] {
 
   .review-card {
     margin: 0;
+  }
+
+  /* early access */
+
+  .early-access {
+    padding: 4rem 0 !important;
+  }
+
+
+  .early-access-description, .early-access-signup {
+    flex: 0 1 auto;
+    width: 50%;
+    padding: 1rem clamp(0.5rem, 6vw, 5rem);
+  }
+
+  .attribution {
+    display: flex;
+  }
+
+  .email-phone, .about-us, .contact-us, .social-connect {
+    flex: 0 1 auto;
+    width: max-content;
+  }
+
+  .social-connect {
+    justify-content: flex-start !important;
   }
 }
