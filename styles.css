@@ -27,8 +27,8 @@ body {
   text-align: center;
 }
 
-/* custom spaceing */
-.responsive-spaceing {
+/* custom spacing */
+.responsive-spacing {
   padding: clamp(1rem, 6vw, 5rem) !important;
 }
 
@@ -81,7 +81,7 @@ h3.fylo-heading {
 .get-started-btn {
   width: 100%;
   font-family: var(--raleway);
-  border-radius: 4px;
+  border-radius: 2px;
   font-weight: 600;
   padding: 9px 5px;
   margin: 0.5rem 0;
@@ -184,24 +184,14 @@ input[type=email] {
   }
 
   /* fylo working processs */
-  .background-wrapper {
-    background-image: url("images/bg-curve-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    background-color: var(--neutral-grayishblue);
-  }
-
   .review-card {
     margin: 0;
   }
 
   /* early access */
-
   .early-access {
     padding: 4rem 0 !important;
   }
-
 
   .early-access-description, .early-access-signup {
     flex: 0 1 auto;
@@ -221,4 +211,22 @@ input[type=email] {
   .social-connect {
     justify-content: flex-start !important;
   }
+
+  /* active states */
+  .get-started-btn:hover {
+    background-color: #80a8ff !important;
+    border: none;
+    box-shadow: 5px 4px 5px -2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 5px 4px 5px -2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 5px 4px 5px -2px rgba(0,0,0,0.14);
+  }
+
+  .social-icon:hover {
+    border-color: #80a8ff;
+  }
+
+  .fa-brands:hover {
+    color: #80a8ff;
+  } 
+
 }
