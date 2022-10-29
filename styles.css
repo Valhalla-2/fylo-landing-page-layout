@@ -170,7 +170,10 @@ input[type=email] {
     text-align: left;
   }
 
-  .fylo-signup, .fylo-working-process, .form-section, .early-access {
+  .fylo-signup, 
+  .fylo-working-process, 
+  .form-section, 
+  .early-access {
     display: flex !important;
   }
 
@@ -199,16 +202,22 @@ input[type=email] {
     padding: 1rem clamp(0.5rem, 6vw, 5rem);
   }
 
+  /* footer section */
+
   .attribution {
     display: flex;
   }
 
-  .email-phone, .about-us, .contact-us, .social-connect {
+  .attribution > div {
     flex: 0 1 auto;
     width: max-content;
   }
 
-  .social-connect {
+  .attribution > div:not(:first-child) {
+    margin-top: 3rem !important;
+  }
+
+  .social-connect > ul {
     justify-content: flex-start !important;
   }
 
