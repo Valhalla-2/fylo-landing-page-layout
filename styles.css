@@ -166,7 +166,7 @@ section.fylo-working-process::before {
 .social-icon {
   width: 35px;
   height: 35px;
-  padding: 5px;
+  padding: 7px;
   text-align: center;
   border: 1px solid #FFF;
   border-radius: 50%;
@@ -261,6 +261,10 @@ section.fylo-working-process::before {
     -moz-box-shadow: 5px 4px 5px -2px rgba(0, 0, 0, 0.14);
   }
 
+  .social-icon {
+    padding: 5px;
+  }
+  
   .social-icon:hover {
     border-color: #80a8ff;
   }
