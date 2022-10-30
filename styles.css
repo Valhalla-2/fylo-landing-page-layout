@@ -261,10 +261,14 @@ section.fylo-working-process::before {
     -moz-box-shadow: 5px 4px 5px -2px rgba(0, 0, 0, 0.14);
   }
 
+  .about-us a:hover, .contact-us a:hover {
+    color: #80a8ff !important;
+  }
+
   .social-icon {
     padding: 5px;
   }
-  
+
   .social-icon:hover {
     border-color: #80a8ff;
   }
