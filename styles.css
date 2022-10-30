@@ -24,6 +24,7 @@ html, body {
 body {
   font-family: var(--open-sans);
   text-align: center;
+  color: var(--primery-blue);
 }
 
 /* custom spacing */
@@ -52,6 +53,7 @@ body {
 /* setting up the font-size & font-weight */
 .nav-link {
   font-size: clamp(0.8rem, 3vw, 1rem) !important;
+  color: var(--primery-blue) !important ;
 }
 
 .fylo-heading {
