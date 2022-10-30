@@ -23,7 +23,6 @@ html, body {
 
 body {
   font-family: var(--open-sans);
-  /* font-size: 0.9375rem; */
   text-align: center;
 }
 
@@ -51,6 +50,10 @@ body {
 }
 
 /* setting up the font-size & font-weight */
+.nav-link {
+  font-size: clamp(0.8rem, 3vw, 1rem) !important;
+}
+
 .fylo-heading {
   font-weight: 700;
   font-family: var(--raleway);
@@ -97,6 +100,20 @@ input[type=email] {
 /* fylo-working-process section */
 .fylo-working-process {
   background-color: var(--neutral-grayishblue);
+  position: relative;
+}
+
+section.fylo-working-process::before {
+  content: "";
+  background-image: url(images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  height: 8rem;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: -45px;
 }
 
 .fylo-link::after {
@@ -164,15 +181,15 @@ input[type=email] {
   margin-right: 1rem;
 }
 
-/* for other screen resolution*/
+/* for large screen resolution*/
 @media screen and (min-width:576px) {
   body {
     text-align: left;
   }
 
-  .fylo-signup, 
-  .fylo-working-process, 
-  .form-section, 
+  .fylo-signup,
+  .fylo-working-process,
+  .form-section,
   .early-access {
     display: flex !important;
   }
@@ -187,6 +204,14 @@ input[type=email] {
   }
 
   /* fylo working processs */
+  section.fylo-working-process::before {
+    content: "";
+    background-image: url(images/bg-curve-desktop.svg);
+    right: 0;
+    left: 0;
+    top: -47px;
+  }
+
   .review-card {
     margin: 0;
   }
@@ -203,21 +228,20 @@ input[type=email] {
   }
 
   /* footer section */
-
   .attribution {
     display: flex;
   }
 
-  .attribution > div {
+  .attribution>div {
     flex: 0 1 auto;
     width: max-content;
   }
 
-  .attribution > div:not(:first-child) {
+  .attribution>div:not(:first-child) {
     margin-top: 3rem !important;
   }
 
-  .social-connect > ul {
+  .social-connect>ul {
     justify-content: flex-start !important;
   }
 
@@ -225,9 +249,9 @@ input[type=email] {
   .get-started-btn:hover {
     background-color: #80a8ff !important;
     border: none;
-    box-shadow: 5px 4px 5px -2px rgba(0,0,0,0.14);
-    -webkit-box-shadow: 5px 4px 5px -2px rgba(0,0,0,0.14);
-    -moz-box-shadow: 5px 4px 5px -2px rgba(0,0,0,0.14);
+    box-shadow: 5px 4px 5px -2px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 5px 4px 5px -2px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 5px 4px 5px -2px rgba(0, 0, 0, 0.14);
   }
 
   .social-icon:hover {
@@ -236,6 +260,11 @@ input[type=email] {
 
   .fa-brands:hover {
     color: #80a8ff;
-  } 
+  }
+}
 
+@media screen and (min-width:1030px) {
+  section.fylo-working-process::before {
+    top: -80px;
+  }
 }
