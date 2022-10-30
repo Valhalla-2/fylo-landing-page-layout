@@ -82,6 +82,7 @@ h3.fylo-heading {
 
 /* form control section */
 .get-started-btn {
+  /* targeting both btns */
   width: 100%;
   font-family: var(--raleway);
   border-radius: 2px;
@@ -195,8 +196,14 @@ section.fylo-working-process::before {
   }
 
   .get-started-btn {
-    max-width: 15rem;
+    /* targeting both btns */
     margin: 7px 10px;
+    max-width: 15rem;
+  }
+
+  .fylo-signup-btn {
+    /* targeting btn from fylo-signup section only */
+    width: clamp(8.5rem, 16vw, 15rem);
   }
 
   .mail-submit {
